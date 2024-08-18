@@ -1,0 +1,704 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 120px;
+    background-color: black;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    z-index: 111;
+    color: white;
+}
+.logo{
+    font-size: 48px;
+    color: red;
+    text-decoration: none;
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+}
+ol li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+ol li a:hover{
+    color: red;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+.view{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.home{
+    display: flex;
+    height: 900x;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    width: 70%; 
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+}
+.second{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(../image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.top h2{
+    font-size: 40px;
+}
+.top h2 b{
+    color: red;
+    font-size: 80px;
+    text-align: left;
+}
+.top pre{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+.join{
+    position: absolute;
+    left: 25%;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red ;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.join:hover{
+    color: white;
+    background: red;
+}
+.join a{
+    text-decoration: none;
+    color: red;
+}
+.join a:hover{
+    color: white;
+}
+.about{
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+}
+.about .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about .main h1{
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+}
+.about .main a{
+    color: red;
+}
+.about .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: fantasy;
+}
+.about .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+#moreText{
+    display: none;
+}
+.about .content .inside{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 20px 70px;
+}
+.about .content .inside p a{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.about .content .inside a{
+    color: red;
+}
+.about .content .inside .box{
+    position: relative;
+    height: 400px;
+    box-shadow: 10px 10px red;
+}
+.about .content .inside .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#textButton{
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#textButton:hover{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+}
+
+.workout{
+    background-color: black;
+    height: 850px;
+}
+.workout .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.workout .main h1{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+}
+.workout .main a{
+    color: red;
+}
+.workout .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: fantasy;
+}
+.workout .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.workout .content{
+    flex-wrap: wrap;
+}
+.workout .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background: #111;
+    box-shadow:  0 10px 10px rgba(0, 0, 0.5, 0.5);
+}
+.workout .content .frame .box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.workout .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.1s ease-in;
+    filter: brightness(70%);
+}
+.workout .content .frame .box img:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+.workout .content .frame .title{
+    color: red;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+.workout .content .title h4{
+    text-align: right;   
+}
+
+
+.diet{
+    background-color: #111;
+    height: auto;
+}
+.diet .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.diet .main h1{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+}
+.diet .main a{
+    color: red;
+}
+.diet .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.diet .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.diet .content .out{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.diet .content .out .in{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+.diet .content .out .in .food{
+    font-size: 30px;
+    color: orangered;
+
+}
+.diet .content .out  .in p{
+    font-size: 20px;
+}
+.diet .content .out .in .box{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: grey;
+}
+.diet .content .out .in .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+}
+.diet button a{
+    text-decoration: none;
+    color: red;
+}
+.diet button{
+    left: 30%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid red ;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.5s ease;
+    margin-left: 695px;
+    margin-right: 650px;
+    margin-bottom: 40px;
+}
+.diet button:hover{
+    color: white;
+    background: red;
+}
+.diet button a:hover{
+    color: white;
+}
+
+.contact{
+    background-color: black;
+    height: 430px;
+}
+.contact .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact .main h1{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+}
+.contact .main a{
+    color: white;
+}
+.contact .main h2{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: fantasy;
+}
+.contact .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.contact .content .location{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 0px 20px;
+    text-align: center;
+    border-radius: 25%;
+    filter: brightness(80%);
+    box-shadow: 5px 5px 5px 5px red;
+}
+.contact .content .phone{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 0px 20px;
+    text-align: center;
+    border-radius: 25%;
+    filter: brightness(80%);
+    box-shadow: 5px 5px 5px 5px red;
+}
+.contact .content .email{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 0px 20px;
+    text-align: center;
+    border-radius: 25%;
+    filter: brightness(80%);
+    box-shadow: 5px 5px 5px 5px red;
+}
+.contact .content .location:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    background: red;
+    box-shadow: 5px 5px 5px 5px white;
+}
+.contact .content .phone:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    background: red;
+    box-shadow: 5px 5px 5px 5px white;
+
+}
+.contact .content .email:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    background: red;
+    box-shadow: 5px 5px 5px 5px white;
+
+}
+
+/* responsive part */
+@media(max-width:1200px){
+    .workout{
+        height:900px;
+    }
+}
+@media (max-width: 900px){
+    #home .top h2{
+        font-size: 35px;
+    }
+    .top h2 b{
+        font-size: 65px;
+    }
+    #home .top pre{
+        font-size: 20px;
+    }
+    #home .top button{
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    #about{
+        height: 1100px;
+    }
+    #about .main h2{
+        font-size: 18px;
+    }
+    #about .content{
+        flex-direction: column;
+    }
+
+    .workout{
+        height: 1100px;
+    }
+    .workout .main h1{
+        font-size: 20px;
+    }
+    .workout .main h2{
+        font-size: 18px;
+    }
+
+    .diet .main h1{
+        font-size: 20px;
+    }
+    .diet .main h2{
+        font-size: 18px;
+    }
+    .diet button{
+        margin-left: 45%;
+    }
+    .diet .content .out{
+        flex-direction: column;
+        margin-left: 15%;
+    }
+    .contact .main h1{
+        font-size: 20px;
+    }
+    .contact .main h2{
+        font-size: 15px;
+    }
+
+    .contact .main h1{
+        font-size: 20px;
+    }
+    .contact.main h2{
+        font-size: 15px;
+    }
+}
+@media (max-width:850px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+@media (max-width: 700px){
+    #home .top h2{
+        font-size: 30px;
+    }
+    .top h2 b{
+        font-size: 55px;
+    }
+    #home .top{
+        margin-right: 100px;
+    }
+    #home .top pre{
+        font-size: 18px;
+    }
+    #home .top button{
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    #about{
+        height: 1200px;
+    }
+    #about .main h2{
+        font-size: 16px;
+    }
+    #about .content .inside{
+        font-size: 16px;
+    }
+    #about .content{
+        flex-direction: column;
+    }
+
+    .workout{
+        height: 1900px;
+    }
+    .workout .main h1{
+        font-size: 18px;
+    }
+    .workout .main h2{
+        font-size: 16px;
+    }
+
+    .diet .main h1{
+        font-size: 20px;
+    }
+    .diet .main h2{
+        font-size: 16px;
+    }
+    .diet button{
+        margin-left: 45%;
+    }
+    .diet .content .out{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .diet p{
+        font-size: 18px;
+    }
+    .contact{
+        height: 650px
+    }
+    .contact .content{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .contact .content .email{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    #home .top h2{
+        font-size: 20px;
+    }
+    .top h2 b{
+        font-size: 35px;
+    }
+    #home .top{
+        margin-right: 100px;
+    }
+    #home .top pre{
+        display: none;
+    }
+    #home .top button{
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    #about{
+        height: 1200px;
+    }
+    #about .main h2{
+        font-size: 16px;
+    }
+    #about .content .inside{
+        font-size: 16px;
+    }
+    #about .content{
+        flex-direction: column;
+    }
+
+    .workout{
+        height: 1900px;
+    }
+    .workout .main h1{
+        font-size: 18px;
+    }
+    .workout .main h2{
+        font-size: 16px;
+    }
+
+    .diet .main h1{
+        font-size: 20px;
+    }
+    .diet .main h2{
+        font-size: 16px;
+    }
+    .diet button{
+        margin-left: 45%;
+    }
+    .diet .content .out{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .diet p{
+        font-size: 18px;
+    }
+    .contact{
+        height: 650px
+    }
+    .contact .content{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .contact .content .email{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 413px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .nav-menu{
+        position: fixed;
+        
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+}
+
+

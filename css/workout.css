@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 30px 120px;
+    background-color: black;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    z-index: 1;
+    color: white;
+}
+.logo{
+    font-size: 48px;
+    color: red;
+    text-decoration: none;
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+}
+ol li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+ol li a:hover{
+    color: red;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+.view{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.workout{
+    background-color: #111;
+    height: 100%;
+}
+.workout .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.workout .main h1{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+}
+.workout .main a{
+    color: red;
+}
+.workout .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.workout .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.workout .content{
+    flex-wrap: wrap;
+}
+.workout .content .frame{
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    background: black;
+    box-shadow:  0 10px 10px rgba(0, 0, 0.5, 0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.workout .content .frame .box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border: 3px solid red;
+    border-radius: 20px;
+}
+.workout .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.1s ease-in;
+    filter: brightness(70%);
+}
+.workout .content .frame .box img:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+.workout .content .frame .title{
+    color: red;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 1150px){
+    .workout .content{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 700px){
+    .workout .main h1{
+        font-size: 25px;
+    }
+    .workout .main h2{
+        font-size: 20px;
+    }
+    .workout .content .frame p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px){
+    .workout .main h1{
+        font-size: 20px;
+    }
+    .workout .main h2{
+        font-size: 18px;
+    }
+    .workout .content .frame p{
+        font-size: 12px;
+    }
+    .workout .content .frame .title{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:800px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}

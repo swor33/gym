@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(../image/redbglogin.jpeg);
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 120px;
+    background-color: black;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    z-index: 1;
+    color: white;
+}
+.logo{
+    font-size: 48px;
+    color: red;
+    text-decoration: none;
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+}
+ol li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+ol li a:hover{
+    color: red;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+.register{
+    width: 400px;
+    height: 450px;
+    color: white;
+    top: 25%;
+    left: 40%;
+    box-sizing: border-box;
+    position: absolute;
+    border: 3px solid red;
+    border-radius: 50px;
+    background-color: #111;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h3{
+    padding: 20px 0px;
+}
+label{
+    padding: 10px 0px;
+}
+input{
+    padding: 15px 0px;;
+    margin: 0px 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: red;
+}
+#register{
+    color: red;
+}
+button{
+    padding: 10px 10px;
+    margin: 20px 140px;
+    border-radius: 20px;
+    background-color: red;
+}
+#login a{
+    margin-top: -10px;
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    background-color: white;
+    color: red;
+}
+#login a:hover{
+    color: orangered;
+}
+
+@media (max-width: 1000px){
+    .register{
+        margin-left: -10%;
+    }
+}
+@media (max-width: 750px){
+     .register{
+        margin-left: -15%;
+    }
+}
+@media (max-width: 650px){
+     .register{
+        margin-left: -23%;
+    }
+}
+@media (max-width: 550px){
+     .register{
+        margin-left: -28%;
+        height: 450px;
+        width: 400px;
+    }
+}
+@media (max-width: 500px){
+     .register{
+        margin-left: -25%;
+        height: 450px;
+        width: 350px;
+    }
+}
+@media (max-width:800px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}

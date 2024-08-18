@@ -1,0 +1,450 @@
+.view{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.home{
+    display: flex;
+    height: 900x;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    width: 70%; 
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.second{
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background: url(../image/diettop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+
+}
+.top h2 b{
+    color: red;
+    font-size: 80px;
+    text-align: left;
+    margin-left: 40%;
+    filter: brightness(100%);
+}
+.top h3{
+    margin-left: 30%;
+}
+.weight{
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 80px;
+}
+.weight h1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border: 3px red solid;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+.weight h1 a:hover{
+    background-color: white;
+    color: red;
+}
+
+.diet1{
+    background-color: #111;
+    height: auto;
+}
+.diet1 .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.diet1 .main h1{   
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.diet1 .main #sub{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet1 .main #sub:hover{
+    background-color: white;
+    color: red;
+}
+.diet1 .main #dub:hover{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet1 .main a{
+    color: red;
+    text-decoration: none;
+}
+.diet1 .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.diet1 .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.diet1 .content .out{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.diet1 .content .out .in{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+
+.diet2{
+    background-color: black;
+    height: auto;
+}
+.diet2 .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.diet2 .main h1{   
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.diet2 .main #sub{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet2 .main #sub:hover{
+    background-color: white;
+    color: red;
+}
+.diet2 .main #dub:hover{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet2 .main a{
+    color: red;
+    text-decoration: none;
+}
+.diet2 .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.diet2 .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.diet2 .content .out{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.diet2 .content .out .in{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+.diet3{
+    background-color: #111;
+    height: auto;
+}
+.diet3 .main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.diet3 .main h1{   
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.diet3 .main #sub{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet3 .main #sub:hover{
+    background-color: white;
+    color: red;
+}
+.diet3 .main #dub:hover{
+    border: 3px solid red;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: red;
+}
+.diet3 .main a{
+    color: red;
+    text-decoration: none;
+}
+.diet3 .main h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.diet3 .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.diet3 .content .out{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.diet3 .content .out .in{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: red;
+    text-align: left;
+   padding: 8px;
+}
+  
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+@media (max-width: 1200px){
+    .home .top h2 b{
+        margin-left: 35%;
+    }
+    .home .top h3{
+        margin-left: 25%;
+    }
+}
+@media (max-width: 1050px){
+    .home .top h2 b{
+        font-size: 70px;
+    }
+    .home .top h3{
+        margin-left: 20%;
+        font-size: 17px;
+    }
+}
+@media (max-width: 900px){
+    .home .top h2 b{
+        font-size: 65px;
+    }
+    .home .top h3{
+        margin-left: 20%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 800px){
+    .hamburger{
+        margin-top: 10px;
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+@media (max-width: 750px){
+    .home .top h2 b{
+        font-size: 60px;
+    }
+    .home .top h3{
+        margin-left: 20%;
+        font-size: 13px;
+    }
+    .weight{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        row-gap: 30px;
+        margin-left: 45%;
+    }
+    #third{
+        margin-left: 11%;
+    }
+}
+    @media (max-width: 700px){
+        .home .top h2 b{
+            font-size: 40px;
+            margin-left: 41%;
+        }
+        #third{
+            margin-left: 10%;
+        }
+        .home .top h3{
+          display: none;
+        }
+        .diet1 .main #dub{
+            display: none;
+        }
+        .diet1 .main #sub{
+            font-size: 15px;
+        }
+        .diet1 .main h2{
+            font-size: 15px;
+        }
+        .diet1 .content .out{
+            flex-direction: column;
+        }
+        .diet2 .main #dub{
+            display: none;
+        }
+        .diet2 .main #sub{
+            font-size: 15px;
+        }
+        .diet2 .main h2{
+            font-size: 15px;
+        }
+        .diet2 .content .out{
+            flex-direction: column;
+        }
+        .diet3{
+            height: 1000px;
+        }
+        .diet3 .main #dub{
+            display: none;
+        }
+        .diet3 .main #sub{
+            font-size: 15px;
+        }
+        .diet3 .main h2{
+            font-size: 15px;
+        }
+        .diet3 .content .out{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 600px){
+        .diet1 .in{
+            font-size: 10px;
+            margin-left: -4%;
+        }
+        .diet2 .in{
+            font-size: 10px;
+            margin-left: -4%;
+        }
+        .diet3 .in{
+            font-size: 10px;
+            margin-left: -4%;
+        }
+    }
+    @media (max-width: 500px){
+        .home .top h2 b{
+            font-size: 30px;
+            margin-left: 45%;
+        }
+        #third{
+            margin-left: 15%;
+        }
+        .diet1 .in{
+            font-size: 8px;
+            margin-left: -20%;
+        }
+        .diet1 .main #sub{
+            font-size: 10px;
+        }
+        .diet1 .main h2{
+            font-size: 10px;
+        }
+        .diet2 .in{
+            font-size: 8px;
+            margin-left: -20%;
+        }
+        .diet2 .main #sub{
+            font-size: 10px;
+        }
+        .diet2 .main h2{
+            font-size: 10px;
+        }
+        .diet3 .in{
+            font-size: 8px;
+            margin-left: -20%;
+        }
+        .diet3 .main #sub{
+            font-size: 10px;
+        }
+        .diet3 .main h2{
+            font-size: 10px;
+        }
+    }
+    
+    
+  
+  
